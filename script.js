@@ -3,13 +3,13 @@ const ctx = canvas.getContext('2d');
 const birdElement = document.getElementById('bird-entity');
 
 const pipeImg = new Image();
-pipeImg.src = 'slab.png';
+pipeImg.src = 'Things/slab.png';
 
-const bgMusic = new Audio('gbmusic.mp3');
+const bgMusic = new Audio('Things/gbmusic.mp3');
 bgMusic.loop = true;
 bgMusic.volume = 0.4;
 
-const dieSound = new Audio('out.mp3');
+const dieSound = new Audio('Things/out.mp3');
 
 let bird, pipes, score;
 let highScore = localStorage.getItem('flappyHighScore') || 0; 
