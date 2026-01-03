@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    font-family: 'Arial', sans-serif;
+    
+    background-image: url('bgimage.png');
+    background-size: cover;    
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+canvas {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent; 
+}
+
+#bird-entity {
+    position: absolute;
+    width: 50px;  
+    height: auto;
+    z-index: 10;  
+    display: none; 
+}
+
+#ui-layer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    pointer-events: none;
+    z-index: 20;
+    color: white;
+    text-shadow: 2px 2px 0 #000;
+}
+
+.score-board {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.high-score-label {
+    color: #ffd700; 
+    font-size: 1.2rem;
+}
+
+h1 { font-size: 4rem; margin: 0 0 10px 0; }
+
+button {
+    pointer-events: auto;
+    background-color: #e0ac00;
+    border: 2px solid #fff;
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    border-radius: 50px;
+    margin-top: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+button:hover { background-color: #c49600; }
+.hidden { display: none; }
